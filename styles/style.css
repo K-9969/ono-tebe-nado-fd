@@ -1,1 +1,369 @@
-/* место для вашего кода */
+/*Стили основных блоков*/
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  height: 293px;
+  padding: 92px 50px 96px 50px;
+}
+
+.cover {
+  position: relative;
+  display: grid;
+  align-items: end;
+  height: 757px;
+  padding: 50px;
+  background: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 51% center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.lots {
+  padding: 180px 24px 0 24px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  gap: 25px;
+  justify-content: space-between;
+  height: 595px;
+  margin-top: 120px;
+  padding: 0 24px 0 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 180px;
+  margin-top: 180px;
+  padding: 0 50px 0 50px;
+}
+
+/*Стили шапки*/
+
+.header_links-list {
+  display: flex;
+  list-style-type: circle;
+  list-style-position: inside;
+  gap: 13px;
+}
+
+.header_links-list .header_links-list-item:first-child {
+  list-style-type: none;
+}
+
+.header_link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  border-bottom: 1px #000 solid;
+}
+
+.header_link_active {
+  border-bottom: none;
+}
+
+.header_logo {
+  width: 148px;
+  height: 105px;
+}
+
+.header_logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+.contact_links {
+  border-bottom: 1px #000 solid;
+}
+
+/*Стили контента cover*/
+
+.cover_title {
+  display: flex; 
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  padding-top: 9px;
+  font-size: 100px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  z-index: 2;
+  display: block;
+  letter-spacing: 30px;
+}
+
+.aligned-text_left {
+  align-self: start;
+}
+
+.aligned-text_center {
+  align-self: center;
+}
+
+.aligned-text_right {
+  align-self: flex-end;
+}
+
+.no-letter-spacing {
+  letter-spacing: -0.01px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.cover_description-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  text-align: center;
+  width: 256px;
+  height: 51px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0px;
+  line-height: 100%;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px #fff solid;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0;
+}
+
+/*Стили блока с лотами*/
+
+.lots_heading {
+  padding-top: 5px;
+  padding-left: 40px;
+  margin-bottom: 31px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.lots_card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.lots_card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.article_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card_title {
+  z-index: 2;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.card_text {
+  z-index: 2;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.card_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lots_look-more-link {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 31px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  border-bottom: 1px #000 solid;
+}
+
+/*Стили контента about*/
+
+.about_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: start;
+  width: 240px;
+  height: 240px;
+  margin-top: 35px;
+  background-color: #000;
+  border-radius: 100%;
+}
+
+.about_logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 104px;
+}
+
+.about_title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/*Стили подвала*/
+
+.footer_menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 3.5px;
+  list-style-type: none;
+}
+
+.footer_menu-list-item {
+  align-self: center;
+}
+
+.footer_menu-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-decoration: underline;
+}
+
+.footer_menu-link_active {
+  text-decoration: none;
+}
+
+.footer_social-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  align-content: baseline;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer_social-link {
+  text-decoration: none;
+}
+
+.footer_social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*Переиспользуемые стили */
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 265px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+.header .address {
+  max-width: 240px;
+  justify-self: end;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 400px;
+  background: rgba(0, 0, 0, 0.6);
+}
