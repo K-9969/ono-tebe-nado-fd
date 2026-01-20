@@ -90,6 +90,7 @@
 /*Стили контента cover*/
 
 .cover_title {
+  text-transform: uppercase;
   display: flex; 
   flex-direction: column;
   gap: 18px;
@@ -99,7 +100,6 @@
   font-weight: 700;
   font-style: normal;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .aligned-text {
