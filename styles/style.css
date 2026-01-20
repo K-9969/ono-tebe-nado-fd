@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
   padding: 92px 50px 96px 50px;
 }
 
@@ -12,7 +11,7 @@
   position: relative;
   display: grid;
   align-items: end;
-  height: 757px;
+  min-height: 757px;
   padding: 50px;
   background: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -35,7 +34,6 @@
   grid-template-columns: 334px auto;
   gap: 25px;
   justify-content: space-between;
-  height: 595px;
   margin-top: 120px;
   padding: 0 24px 0 24px;
 }
@@ -43,9 +41,8 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 180px;
   margin-top: 180px;
-  padding: 0 50px 0 50px;
+  padding: 0 50px 82px 50px;
 }
 
 /*Стили шапки*/
@@ -217,25 +214,21 @@
   letter-spacing: 0;
 }
 
-.card_film {
-  background-image: url(../images/card-lot-01.jpg);
+.card_background-parameters{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.card_film {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .lots_look-more-link {
@@ -274,6 +267,7 @@
   flex-direction: column;
   justify-content: end;
   gap: 104px;
+  padding-top: 145px;
 }
 
 .about_title {
